@@ -2,6 +2,7 @@
 title = "Gallerie"
 type = "blank"
 menu = "main"
+header = false
 +++
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 
@@ -13,78 +14,116 @@ menu = "main"
 <script type="text/javascript" src="/libs/supersized/theme/supersized.shutter.min.js"></script>
 <script type="text/javascript">
 
-			jQuery(function($){
+    jQuery(function ($) {
 
-				$.supersized({
+        $.supersized({
 
-					// Functionality
-slideshow               :   1,			// Slideshow on/off
-					slide_interval          :   10000,		// Length between transitions
-					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-					transition_speed		:	700,		// Speed of transition
+            // Functionality
+            slideshow: 1,			// Slideshow on/off
+            slide_interval: 10000,		// Length between transitions
+            transition: 1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+            transition_speed: 700,		// Speed of transition
 
-					// Components
-					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-					thumbnail_navigation    :   0,			// Thumbnail navigation
-					thumb_links				:	1,			// Individual thumb links for each slide
-					slides 					:  	[			// Slideshow Images
-														{image : 'refs/az-1.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/az-1.jpg'},
-														{image : 'refs/az-3.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/az-3.jpg'},
-														{image : 'refs/az-4.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/az-4.jpg'},
-														{image : 'refs/az-5.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/az-5.jpg'},
-														{image : 'refs/az-6.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/az-6.jpg'},
-														{image : 'refs/az-7.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/az-7.jpg'},
-														{image : 'refs/az-b-1.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/az-b-1.jpg'},
-														{image : 'refs/az-b-2.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/az-b-2.jpg'},
-														{image : 'refs/bad-1.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/bad-1.jpg'},
-														{image : 'refs/bad-2.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/bad-2.jpg'},
-														{image : 'refs/bad-b-1.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/bad-b-1.jpg'},
-														{image : 'refs/fenster-1.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/fenster-1.jpg'},
-														{image : 'refs/fit-1.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/fit-1.jpg'},
-														{image : 'refs/fit-2.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/fit-2.jpg'},
-														{image : 'refs/fit-3.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/fit-3.jpg'},
-														{image : 'refs/fit-4.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/fit-4.jpg'},
-														{image : 'refs/fit-5.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/fit-5.jpg'},
-														{image : 'refs/fit-6.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/fit-6.jpg'},
-														{image : 'refs/kz-1.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/kz-1.jpg'},
-														{image : 'refs/kz-2.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/kz-2.jpg'},
-														{image : 'refs/kz-3.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/kz-3.jpg'},
-														{image : 'refs/kz-4.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/kz-4.jpg'},
-														{image : 'refs/schlafzimmer-1.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/schlafzimmer-1.jpg'},
-														{image : 'refs/schlafzimmer-2.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/schlafzimmer-2.jpg'},
-														{image : 'refs/schlafzimmer-4.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/schlafzimmer-4.jpg'},
-														{image : 'refs/schlafzimmer-6.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/schlafzimmer-6.jpg'},
-														{image : 'refs/schlafzimmer-7.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/schlafzimmer-7.jpg'},
-														{image : 'refs/schlafzimmer-9.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/schlafzimmer-9.jpg'},
-														{image : 'refs/ammann_schreibtisch.jpg', title : 'Schreinerei Ammann, Dirlewang', thumb : 'thumb/ammann_schreibtisch.jpg'}
+            // Components
+            slide_links: 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+            thumbnail_navigation: 0,			// Thumbnail navigation
+            thumb_links: 1,			// Individual thumb links for each slide
+            slides: [			// Slideshow Images
+                {image: 'refs/az-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/az-1.jpg'},
+                {image: 'refs/az-3.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/az-3.jpg'},
+                {image: 'refs/az-4.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/az-4.jpg'},
+                {image: 'refs/az-5.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/az-5.jpg'},
+                {image: 'refs/az-6.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/az-6.jpg'},
+                {image: 'refs/az-7.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/az-7.jpg'},
+                {image: 'refs/az-b-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/az-b-1.jpg'},
+                {image: 'refs/az-b-2.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/az-b-2.jpg'},
+                {image: 'refs/bad-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/bad-1.jpg'},
+                {image: 'refs/bad-2.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/bad-2.jpg'},
+                {image: 'refs/bad-b-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/bad-b-1.jpg'},
+                {image: 'refs/fenster-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/fenster-1.jpg'},
+                {image: 'refs/fit-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/fit-1.jpg'},
+                {image: 'refs/fit-2.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/fit-2.jpg'},
+                {image: 'refs/fit-3.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/fit-3.jpg'},
+                {image: 'refs/fit-4.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/fit-4.jpg'},
+                {image: 'refs/fit-5.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/fit-5.jpg'},
+                {image: 'refs/fit-6.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/fit-6.jpg'},
+                {image: 'refs/kz-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/kz-1.jpg'},
+                {image: 'refs/kz-2.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/kz-2.jpg'},
+                {image: 'refs/kz-3.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/kz-3.jpg'},
+                {image: 'refs/kz-4.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'thumb/kz-4.jpg'},
+                {
+                    image: 'refs/schlafzimmer-1.jpg',
+                    title: 'Schreinerei Ammann, Dirlewang',
+                    thumb: 'thumb/schlafzimmer-1.jpg'
+                },
+                {
+                    image: 'refs/schlafzimmer-2.jpg',
+                    title: 'Schreinerei Ammann, Dirlewang',
+                    thumb: 'thumb/schlafzimmer-2.jpg'
+                },
+                {
+                    image: 'refs/schlafzimmer-4.jpg',
+                    title: 'Schreinerei Ammann, Dirlewang',
+                    thumb: 'thumb/schlafzimmer-4.jpg'
+                },
+                {
+                    image: 'refs/schlafzimmer-6.jpg',
+                    title: 'Schreinerei Ammann, Dirlewang',
+                    thumb: 'thumb/schlafzimmer-6.jpg'
+                },
+                {
+                    image: 'refs/schlafzimmer-7.jpg',
+                    title: 'Schreinerei Ammann, Dirlewang',
+                    thumb: 'thumb/schlafzimmer-7.jpg'
+                },
+                {
+                    image: 'refs/schlafzimmer-9.jpg',
+                    title: 'Schreinerei Ammann, Dirlewang',
+                    thumb: 'thumb/schlafzimmer-9.jpg'
+                },
+                {
+                    image: 'refs/ammann_schreibtisch.jpg',
+                    title: 'Schreinerei Ammann, Dirlewang',
+                    thumb: 'thumb/ammann_schreibtisch.jpg'
+                }
 
-												]
+            ]
 
-				});
-				$.supersized.vars.image_path = "/libs/supersized/img/";
-		    });
-
-
-
-
+        });
+        $.supersized.vars.image_path = "/libs/supersized/img/";
+    });
 
 
 </script>
 
 
 <style type="text/css">
-		ul#demo-block{ margin:0 15px 15px 15px; }
-			ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/bg-black.png'); font:11px Helvetica, Arial, sans-serif; }
-			ul#demo-block li a{ color:#eee; font-weight:bold; }
+    ul#demo-block {
+        margin: 0 15px 15px 15px;
+    }
 
+    ul#demo-block li {
+        margin: 0 0 10px 0;
+        padding: 10px;
+        display: inline;
+        float: left;
+        clear: both;
+        color: #aaa;
+        background: url('img/bg-black.png');
+        font: 11px Helvetica, Arial, sans-serif;
+    }
 
-
+    ul#demo-block li a {
+        color: #eee;
+        font-weight: bold;
+    }
 
 
 </style>
 
-
 <!--Demo styles (you can delete this block)-->
+
+{{< nav >}}
 
 <div id="demo-block">
     <a href="/"><img src="/gfx/headlogo.png"/></a>
@@ -92,6 +131,8 @@ slideshow               :   1,			// Slideshow on/off
 </div>
 
 <!--End of styles-->
+
+
 
 <!--Thumbnail Navigation-->
 <div id="prevthumb"></div>

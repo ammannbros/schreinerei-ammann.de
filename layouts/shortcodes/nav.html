@@ -1,0 +1,11 @@
+<div id="nav">
+    <ul>
+
+        {{ range $.Site.Menus.main }}
+        <li class="first active">
+            <a href="{{.URL}}" title="{{.Name}}">{{.Name}}</a>
+        </li>
+        {{ end }}
+
+    </ul>
+</div>
