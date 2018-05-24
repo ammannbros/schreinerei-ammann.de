@@ -2,4 +2,5 @@ languageCode = "DE-de"
 title = "Schreinerei Ammann"
 [params]
     description = "Aus Liebe zum Holz – Ihr Schreinermeisterbetrieb in Dirlewang/Unterallgäu"
-baseURL = "http://schreinerei-ammann.de/"
+baseURL = "https://schreinerei-ammann.de/"
+canonifyurls = false
