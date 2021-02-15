@@ -1,6 +1,6 @@
 body {
   color: #565655;
-  background: url(/gfx/balken-klein.jpg) repeat-x;
+  background: url(/images/balken-klein.jpg) repeat-x;
   top: 0;
   left: 0;
   font-family: "open sans", sans-serif;
@@ -14,11 +14,11 @@ body {
 }
 
 .kontakt {
-  background: url(/gfx/balken.jpg) repeat-x;
+  background: url(/images/balken.jpg) repeat-x;
 }
 
 #header {
-  background: url(/gfx/kopf_bg.jpg) repeat-x;
+  background: url(/images/kopf_bg.jpg) repeat-x;
   height: 180px;
   z-index: 1000;
   background-position: top center;
@@ -57,7 +57,7 @@ body {
   margin-top: 80px;
   width: 100%;
   height: 194px;
-  background: url(/gfx/wood_tile.jpg);
+  background: url(/images/wood_tile.jpg);
   z-index: 999;
 }
 
@@ -184,7 +184,7 @@ h3 {
   position: relative;
   left: 190px;
   top: 10px;
-  background-image: url("/gfx/ausliebezumholz.png") no-repeat;
+  background-image: url("/images/ausliebezumholz.png") no-repeat;
   z-index: 10000;
 }
 
