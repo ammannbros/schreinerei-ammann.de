@@ -1,100 +1,15 @@
-+++
-title = "Galerie"
-type = "blank"
-menu = "main"
-header = false
-+++
-<script type="text/javascript" src="/libs/jquery/jquery-1.12.4.min.js"></script>
+---
+title: "Galerie"
+type: "blank"
+menu: "main"
+header: false
 
-<link rel="stylesheet" href="/libs/supersized/css/supersized.css" type="text/css" media="screen"/>
-<link rel="stylesheet" href="/libs/supersized/theme/supersized.shutter.css" type="text/css" media="screen"/>
-
-<script type="text/javascript" src="/libs/supersized/js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="/libs/supersized/js/supersized.3.2.7.min.js"></script>
-<script type="text/javascript" src="/libs/supersized/theme/supersized.shutter.min.js"></script>
-<script type="text/javascript">
-
-    jQuery(function ($) {
-
-        $.supersized({
-
-            // Functionality
-            slideshow: 1,			// Slideshow on/off
-            slide_interval: 10000,		// Length between transitions
-            transition: 1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-            transition_speed: 700,		// Speed of transition
-
-            // Components
-            slide_links: 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-            thumbnail_navigation: 0,			// Thumbnail navigation
-            thumb_links: 1,			// Individual thumb links for each slide
-            slides: [			// Slideshow Images
-                {image: 'gallery/az-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/az-1.jpg'},
-                {image: 'gallery/az-3.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/az-3.jpg'},
-                {image: 'gallery/az-4.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/az-4.jpg'},
-                {image: 'gallery/az-5.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/az-5.jpg'},
-                {image: 'gallery/az-6.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/az-6.jpg'},
-                {image: 'gallery/az-7.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/az-7.jpg'},
-                {image: 'gallery/az-b-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/az-b-1.jpg'},
-                {image: 'gallery/az-b-2.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/az-b-2.jpg'},
-                {image: 'gallery/bad-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/bad-1.jpg'},
-                {image: 'gallery/bad-2.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/bad-2.jpg'},
-                {image: 'gallery/bad-b-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/bad-b-1.jpg'},
-                {image: 'gallery/fenster-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/fenster-1.jpg'},
-                {image: 'gallery/fit-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/fit-1.jpg'},
-                {image: 'gallery/fit-2.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/fit-2.jpg'},
-                {image: 'gallery/fit-3.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/fit-3.jpg'},
-                {image: 'gallery/fit-4.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/fit-4.jpg'},
-                {image: 'gallery/fit-5.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/fit-5.jpg'},
-                {image: 'gallery/fit-6.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/fit-6.jpg'},
-                {image: 'gallery/kz-1.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/kz-1.jpg'},
-                {image: 'gallery/kz-2.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/kz-2.jpg'},
-                {image: 'gallery/kz-3.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/kz-3.jpg'},
-                {image: 'gallery/kz-4.jpg', title: 'Schreinerei Ammann, Dirlewang', thumb: 'gallery/thumbs/kz-4.jpg'},
-                {
-                    image: 'gallery/schlafzimmer-1.jpg',
-                    title: 'Schreinerei Ammann, Dirlewang',
-                    thumb: 'gallery/thumbs/schlafzimmer-1.jpg'
-                },
-                {
-                    image: 'gallery/schlafzimmer-2.jpg',
-                    title: 'Schreinerei Ammann, Dirlewang',
-                    thumb: 'gallery/thumbs/schlafzimmer-2.jpg'
-                },
-                {
-                    image: 'gallery/schlafzimmer-4.jpg',
-                    title: 'Schreinerei Ammann, Dirlewang',
-                    thumb: 'gallery/thumbs/schlafzimmer-4.jpg'
-                },
-                {
-                    image: 'gallery/schlafzimmer-6.jpg',
-                    title: 'Schreinerei Ammann, Dirlewang',
-                    thumb: 'gallery/thumbs/schlafzimmer-6.jpg'
-                },
-                {
-                    image: 'gallery/schlafzimmer-7.jpg',
-                    title: 'Schreinerei Ammann, Dirlewang',
-                    thumb: 'gallery/thumbs/schlafzimmer-7.jpg'
-                },
-                {
-                    image: 'gallery/schlafzimmer-9.jpg',
-                    title: 'Schreinerei Ammann, Dirlewang',
-                    thumb: 'gallery/thumbs/schlafzimmer-9.jpg'
-                },
-                {
-                    image: 'gallery/ammann_schreibtisch.jpg',
-                    title: 'Schreinerei Ammann, Dirlewang',
-                    thumb: 'gallery/thumbs/ammann_schreibtisch.jpg'
-                }
-
-            ]
-
-        });
-        $.supersized.vars.image_path = "/libs/supersized/img/";
-    });
+resources:
+ - src: 'images/**.jpg'
+---
 
 
-</script>
+{{% supersized %}}
 
 
 <style type="text/css">
@@ -117,13 +32,10 @@ header = false
         color: #eee;
         font-weight: bold;
     }
-
-
 </style>
 
-<!--Demo styles (you can delete this block)-->
+{{% nav %}}
 
-{{< nav >}}
 
 <div id="demo-block">
     <a href="/"><img src="/images/headlogo.png"/></a>
