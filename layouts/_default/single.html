@@ -4,8 +4,6 @@
     <title>{{.Site.Title}} - {{.Title}}</title>
     {{ partial "meta.html" . }}
 
-   <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css"/>
-
     {{ $style := resources.Get "style.scss" | resources.ToCSS | minify }}
     {{ $fonts := resources.Get "fonts.css" | minify -}}
     <style>
