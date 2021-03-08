@@ -4,4 +4,5 @@ resources:
 
 title: "Sonstiges"
 slug: sonstiges
+weight: 0
 ---

@@ -2,6 +2,6 @@
 resources:
 - src: '*.jpg'
 
-title: "Türen"
-slug: tueren
+title: "Küchen"
+slug: kueche
 ---
