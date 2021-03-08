@@ -4,3 +4,16 @@ title = "Schreinerei Ammann"
     description = "Aus Liebe zum Holz – Ihr Schreinermeisterbetrieb in Dirlewang/Unterallgäu"
 baseURL = "https://schreinerei-ammann.de/"
 canonifyurls = false
+
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 100
+  [[menu.main]]
+    identifier = "galleries"
+    name = "Gallerie"
+    url = "/galleries/"
+    weight = 200

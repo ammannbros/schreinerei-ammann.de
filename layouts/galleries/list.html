@@ -1,0 +1,21 @@
+{{ define "content" }}
+
+<h1>
+    Galleries
+</h1>
+
+{{/* List all galleies */}}
+<ul>
+    {{ range .Paginator.Pages }}
+    <li>
+        <a href="{{ .RelPermalink }}">
+            {{- .Title }}
+        </a>
+    </li>
+    {{ end }}
+</ul>
+
+{{/* Display paginator */}}
+{{ template "_internal/pagination.html" . }}
+
+{{ end }}
