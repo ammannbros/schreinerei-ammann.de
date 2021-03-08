@@ -21,6 +21,7 @@
             slide_links: 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
             thumbnail_navigation: 1,			// Thumbnail navigation
             thumb_links: 1,			// Individual thumb links for each slide
+            fit_always: 1,
             slides: [			// Slideshow Images
             {{ range .Page.Resources.ByType "image" }}
                 {{ $full := . }}
