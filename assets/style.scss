@@ -61,7 +61,7 @@ body {
   z-index: 999;
 }
 
-#content {
+.content {
   position: relative;
   width: 960px;
   margin: 0 auto;
@@ -227,7 +227,7 @@ a:hover {
 
 /* if a link is hovered, it should be gray, now white(invisible) */
 
-#content a:hover {
+.content a:hover {
   color: #757575;
   text-decoration: underline;
 }
@@ -291,4 +291,48 @@ textarea,
 
 #controls-wrapper {
   background: rgba(100, 100, 100, 0.85) !important;
+}
+
+.gallery {
+  width: 100%;
+  float: left;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.preview.gallery img {
+  width: 100%;
+  height: auto;
+
+  filter: brightness(50%);
+}
+
+.gallery a {
+  color: white !important;
+  text-decoration: none !important;
+
+  :hover {
+    color: white !important;
+    text-decoration: none !important;
+  }
+}
+
+.gallery figure {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 300px;
+}
+.gallery figcaption {
+  position: absolute;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  font-size: larger;
 }

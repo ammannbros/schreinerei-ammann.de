@@ -1,19 +1,26 @@
 {{ define "content" }}
 
 <h1>
-    Galleries
+    Bilder Gallerien
 </h1>
 
 {{/* List all galleies */}}
-<ul>
+<div class="gallery preview">
     {{ range .Paginator.Pages }}
-    <li>
-        <a href="{{ .RelPermalink }}">
-            {{- .Title }}
+    {{ $image := index (.Resources.ByType "image") 0 }}
+    <figure>
+        <a href="{{ .RelPermalink }}" itemprop="contentUrl" data-size="1200x800">
+            <img src="{{ ( $image.Resize " 300x200").RelPermalink }}" itemprop="thumbnail" alt="{{- .Title }}" />
+
+            <figcaption href="{{ .RelPermalink }}">
+                {{- .Title }}
+            </a>
         </a>
-    </li>
+
+    </figure>
     {{ end }}
-</ul>
+</div>
+
 
 {{/* Display paginator */}}
 {{ template "_internal/pagination.html" . }}
