@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   color: #565655;
   background: url(/images/balken-klein.jpg) repeat-x;
@@ -7,6 +11,9 @@ body {
   line-height: 140%;
   font-size: 80%;
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
 }
 
 #demo-block {
@@ -52,19 +59,21 @@ body {
   margin: 0 auto;
 }
 
-#footer {
-  margin: 0 auto;
-  margin-top: 80px;
+.footer {
   width: 100%;
-  height: 194px;
   background: url(/images/wood_tile.jpg);
-  z-index: 999;
+  z-index: 999; 
+  height: 194px;
+
+  flex-shrink: 0;
 }
 
 .content {
   position: relative;
   width: 960px;
   margin: 0 auto;
+
+  flex: 1 0 auto;
 }
 
 #colleft {
