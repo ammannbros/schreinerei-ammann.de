@@ -5,8 +5,6 @@ html, body {
 body {
   color: #565655;
   background: url(/images/balken-klein.jpg) repeat-x;
-  top: 0;
-  left: 0;
   font-family: "open sans", sans-serif;
   line-height: 140%;
   font-size: 80%;
@@ -14,14 +12,6 @@ body {
 
   display: flex;
   flex-direction: column;
-}
-
-#demo-block {
-  padding: 50px;
-}
-
-.kontakt {
-  background: url(/images/balken.jpg) repeat-x;
 }
 
 #header {
@@ -95,14 +85,6 @@ body {
   margin-right: 31px;
 }
 
-.bbox {
-  width: 430px;
-  float: left;
-  padding: 0;
-  margin: 0;
-  margin-right: 15px;
-}
-
 .boximg {
   margin-bottom: 20px;
 }
@@ -118,6 +100,16 @@ h1 {
   line-height: 100%;
 }
 
+h2 {
+  font-size: 16px;
+}
+
+
+h3 {
+  font-size: 18px;
+}
+
+
 .semitrans {
   position: absolute;
   font-size: 130%;
@@ -130,9 +122,6 @@ h1 {
   background: rgba(255, 255, 255, 0.8);
 }
 
-h3 {
-  font-size: 18px;
-}
 
 .light {
   font-weight: 300;
@@ -217,9 +206,6 @@ h3 {
   display: block;
 }
 
-h2 {
-  font-size: 16px;
-}
 
 ul#nav {
   font-size: 13px;
