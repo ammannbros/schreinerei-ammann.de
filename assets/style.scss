@@ -4,7 +4,6 @@ html, body {
 
 body {
   color: #565655;
-  background: url(/images/balken-klein.jpg) repeat-x;
   font-family: "open sans", sans-serif;
   line-height: 140%;
   font-size: 80%;
@@ -16,15 +15,15 @@ body {
 
 #header {
   background: url(/images/kopf_bg.jpg) repeat-x;
-  height: 180px;
-  z-index: 1000;
+  height: 200px;
   background-position: top center;
+
+  flex: 0 0 auto;
 }
 
 #head {
   margin: 0 auto;
   width: 960px;
-  background-color: #333333;
 }
 
 #logo {
@@ -58,12 +57,36 @@ body {
   flex-shrink: 0;
 }
 
+.content-wrapper {
+  position: relative;
+
+  flex: 1 0 auto;
+}
+
 .content {
   position: relative;
+
+
   width: 960px;
   margin: 0 auto;
 
-  flex: 1 0 auto;
+}
+
+.content-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f5f5f4;
+  height: 362px;
+  width: 100%;
+  z-index: -100;
+}
+
+/* if a link is hovered, it should be gray, now white(invisible) */
+
+.content a:hover {
+  color: #757575;
+  text-decoration: underline;
 }
 
 #colleft {
@@ -217,13 +240,6 @@ ul#nav {
 #footer a,
 a:hover {
   color: #ffffff;
-  text-decoration: underline;
-}
-
-/* if a link is hovered, it should be gray, now white(invisible) */
-
-.content a:hover {
-  color: #757575;
   text-decoration: underline;
 }
 
