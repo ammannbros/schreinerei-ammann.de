@@ -14,6 +14,6 @@ canonifyurls = false
     weight = 100
   [[menu.main]]
     identifier = "galleries"
-    name = "Gallerie"
+    name = "Galerie"
     url = "/galleries/"
     weight = 200
