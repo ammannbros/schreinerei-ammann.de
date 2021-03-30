@@ -26,8 +26,9 @@ body {
 
 #head {
   margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
   display: flex;
+  margin: 10px;
   justify-content: space-between;
 }
 
@@ -49,7 +50,7 @@ body {
 }
 
 #pic {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -73,7 +74,7 @@ body {
   position: relative;
 
 
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 
 }
@@ -106,13 +107,19 @@ body {
   float: right;
 }
 
+.home-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
 .cbox {
   width: 215px;
-  
-  float: left;
-  padding: 0;
-  margin: 0;
-  margin-right: 31px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 .boximg {
@@ -152,14 +159,20 @@ h3 {
 
 .semitrans {
   position: absolute;
-  font-size: 130%;
-  height: 475px;
-  font-weight: 300;
-  line-height: 150%;
   top: 0;
-  left: 600px;
+  right: 0;
+  bottom: 0;
+
+  overflow: auto;
+  z-index: 10000;
+
+
   width: 320px;
   background: rgba(255, 255, 255, 0.8);
+
+  font-weight: 300;
+  line-height: 150%;
+  font-size: 130%;
 }
 
 
@@ -172,28 +185,24 @@ h3 {
 }
 
 #foot {
-  width: 960px;
+  max-width: 960px;
+
   margin: 0 auto;
+
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #footer-left {
-  float: left;
-  width: 566px;
-  height: 82px;
+
   margin-top: 35px;
   margin-left: 12px;
 }
 
 #footer-right {
-  float: right;
-  height: 99px;
-  width: 200px;
   margin-top: 35px;
-}
-
-.clearall {
-  clear: both;
-  height: 15px;
 }
 
 .m40 {
@@ -212,18 +221,10 @@ h3 {
   color: #b82340;
 }
 
-.last {
-  margin-right: 0;
-}
-
 .ausliebe {
-  width: 136px;
-  height: 55px;
-  position: relative;
-  left: 190px;
-  top: 10px;
-  background-image: url("/images/ausliebezumholz.png") no-repeat;
-  z-index: 10000;
+  width: auto;
+  height: 50px;
+  float: right;
 }
 
 .white {
@@ -239,7 +240,7 @@ h3 {
 }
 
 .small {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .block {
@@ -364,3 +365,5 @@ textarea,
   font-weight: 600;
   font-size: larger;
 }
+
+
