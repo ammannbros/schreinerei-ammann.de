@@ -15,8 +15,10 @@ body {
 
 #header {
   background: url(/images/kopf_bg.jpg) repeat-x;
-  height: 200px;
-  background-position: top center;
+  border-color: #b7213e;
+  border-top-width: 8px;
+  border-top-style: solid;
+  height: 180px;
 
   flex: 0 0 auto;
 }
@@ -24,19 +26,21 @@ body {
 #head {
   margin: 0 auto;
   width: 960px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #logo {
-  float: left;
-  width: 227px;
-  height: 99px;
+  
+
+  height: 80px;
 
   margin-top: 51px;
   margin-left: 12px;
 }
 
 #nav {
-  float: right;
+
   margin-top: 86px;
   color: #ffffff;
   text-decoration: none;
