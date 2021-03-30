@@ -16,7 +16,7 @@
     {{ $resized := $full.Resize "1920x" }}
     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
         <a href="{{ $resized.RelPermalink }}" itemprop="contentUrl" data-size="{{ $resized.Width }}x{{ $resized.Height }}">
-            <img src="{{ ($full.Resize "300x200").RelPermalink }}" itemprop="thumbnail" alt="Image description" />
+            <img src="{{ ($full.Resize "600x400").RelPermalink }}" itemprop="thumbnail" alt="Image description" />
         </a>
     </figure>
     {{ end }}

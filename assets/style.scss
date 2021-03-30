@@ -14,7 +14,8 @@ body {
 }
 
 #header {
-  background: url(/images/kopf_bg.jpg) repeat-x;
+  background: url(/images/kopf_bg.jpg);
+  background-repeat: repeat-x;
   border-color: #b7213e;
   border-top-width: 8px;
   border-top-style: solid;
@@ -54,9 +55,10 @@ body {
 
 .footer {
   width: 100%;
-  background: url(/images/wood_tile.jpg);
+  background: url(/images/wood_tile.jpg); 
+  background-repeat: repeat-x;
   z-index: 999; 
-  height: 194px;
+  height: 190px;
 
   flex-shrink: 0;
 }
@@ -106,6 +108,7 @@ body {
 
 .cbox {
   width: 215px;
+  
   float: left;
   padding: 0;
   margin: 0;
@@ -117,6 +120,12 @@ body {
 
   figure {
     margin: 0;
+
+    img {
+      height: 285px;
+      width: 215px;
+      object-fit: cover;
+    }
   }
 }
 
