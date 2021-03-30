@@ -324,7 +324,10 @@ textarea,
 
 .gallery {
   width: 100%;
-  float: left;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .gallery img {
   width: 100%;
