@@ -1,0 +1,7 @@
+<figure>
+    {{ $full := resources.Get . }}
+    {{ $resized := $full.Resize "1080x" }}
+    <a href="{{ $resized.RelPermalink }}" data-size="{{ $resized.Width }}x{{ $resized.Height }}">
+        <img src="{{ ($full.Resize "215x").RelPermalink }}" />
+    </a>
+</figure>

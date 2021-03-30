@@ -27,9 +27,12 @@
             <div class="ausliebe"></div>
         </div>
     </div>
-    <div class="content">
+    <div class="content photoswipe-gallery">
         <div class="cbox">
-            <div class="boximg"><img src="/img/katpics-tuer.jpg" alt="" /></div>
+
+            <div class="boximg">
+                {{ partial "home_figure.html" "home-images/katpics-tuer.jpg" }}
+            </div>
             <div class="boxtext">
                 <p><span class="rot">Die Haustür –</span><br /><span class="semibold">Visitenkarte<br /> für Ihre
                         gute Adresse.</span>
@@ -40,7 +43,9 @@
             </div>
         </div>
         <div class="cbox">
-            <div class="boximg"><img src="/img/katpics-eckbank.jpg" alt="" /></div>
+            <div class="boximg">
+                {{ partial "home_figure.html" "home-images/katpics-eckbank.jpg" }}
+            </div>
             <div class="boxtext">
                 <p><span class="rot">Die Eckbank –</span><br /><span class="semibold">Viel Platz<br /> für
                         Gastfreundlichkeit.</span>
@@ -50,7 +55,9 @@
             </div>
         </div>
         <div class="cbox">
-            <div class="boximg"><img src="/img/katpics-schrank.jpg" alt="" /></div>
+            <div class="boximg">
+                {{ partial "home_figure.html" "home-images/katpics-schrank.jpg" }}
+            </div>
             <div class="boxtext">
                 <p><span class="rot">Durchdacht –</span><br /><span class="semibold">bis ins Detail</span></p>
                 <p>Egal ob Wohnzimmerschrank oder Büroeinrichtung. Die Realisierung Ihrer individuellen Ideen und
@@ -58,7 +65,9 @@
             </div>
         </div>
         <div class="cbox last">
-            <div class="boximg"><img src="/img/katpics-schlafz.jpg" alt="" /></div>
+            <div class="boximg">
+                {{ partial "home_figure.html" "home-images/katpics-schlafz.jpg" }}
+            </div>
             <div class="boxtext">
                 <p><span class="rot">Extravaganz –</span><br /><span class="semibold">Wandgarderobe geschickt
                         versteckt</span></p>
@@ -69,7 +78,9 @@
         </div>
         <div class="clearall"> </div>
         <div class="cbox">
-            <div class="boximg"><img src="/img/katpics-bad.jpg" alt="" /></div>
+            <div class="boximg">
+                {{ partial "home_figure.html" "home-images/katpics-bad.jpg" }}
+            </div>
             <div class="boxtext">
                 <p><span class="rot">Das Badezimmer –</span><br /><span class="semibold">Oase des
                         Wohlfühlens.</span></p>
@@ -77,7 +88,9 @@
             </div>
         </div>
         <div class="cbox">
-            <div class="boximg"><img src="/img/katpics-kueche.jpg" alt="" /></div>
+            <div class="boximg">
+                {{ partial "home_figure.html" "home-images/katpics-kueche.jpg" }}
+            </div>
             <div class="boxtext">
                 <p><span class="rot">Die Küche –</span><br /><span class="semibold">Zentrum der<br />
                         Kommunikation.</span></p>
@@ -86,7 +99,9 @@
             </div>
         </div>
         <div class="cbox">
-            <div class="boximg"><img src="/img/katpics-parkett.jpg" alt="" /></div>
+            <div class="boximg">
+                {{ partial "home_figure.html" "home-images/katpics-parkett.jpg" }}
+            </div>
             <div class="boxtext">
                 <p><span class="rot">Parkett –</span><br /><span class="semibold">damit das<br /> Ambiente
                         stimmt.</span>
@@ -99,7 +114,9 @@
             </div>
         </div>
         <div class="cbox last">
-            <div class="boximg"><img src="/img/katpics-restaurierung.jpg" alt="" /></div>
+            <div class="boximg">
+                {{ partial "home_figure.html" "home-images/katpics-restaurierung.jpg" }}
+            </div>
             <div class="boxtext">
                 <p><span class="rot">Restauriert –</span><br /><span class="semibold">von Meisterhand</span></p>
                 <p>Vertrauen Sie uns Ihr Schmuckstück an. Mit unserer Erfahrung im Umgang mit dem Werkstoff Holz,
@@ -108,7 +125,10 @@
             </div>
         </div>
         <div class="cbox">
-            <div class="boximg"><img width=213 height=282 style="object-fit: cover;" src="/img/neher.jpg" alt="" /></div>
+            <div class="boximg">
+                {{ partial "home_figure.html" "home-images/neher.jpg" }}
+            
+            </div>
             <div class="boxtext">
                 <p><span class="rot">Instektenschutz –</span><br /><span class="semibold">damit Sie ruhig schlafen</span>
                 </p>
@@ -118,5 +138,7 @@
         <div class="clearall"> </div>
     </div>
 </div>
+
+{{ partial "photoswipe.html" . }}
 
 {{ end }}

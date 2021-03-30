@@ -73,21 +73,10 @@
             </div>
 
         </div>
-
     </div>
-
 </div>
 
-<div class="gallery photoswipe-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-    {{ range .Page.Resources.ByType "image" }}
-    {{ $full := . }}
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="{{ ( $full.Resize " 1920x").RelPermalink }}" itemprop="contentUrl" data-size="1200x800">
-            <img src="{{ ($full.Resize "300x200").RelPermalink }}" itemprop="thumbnail" alt="Image description" />
-        </a>
-    </figure>
-    {{ end }}
-</div>
+
 
 
 <script>
