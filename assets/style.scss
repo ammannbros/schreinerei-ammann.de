@@ -28,12 +28,11 @@ body {
   margin: 0 auto;
   max-width: 960px;
   display: flex;
-  margin: 10px;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 #logo {
-  
 
   height: 80px;
 
@@ -43,7 +42,7 @@ body {
 
 #nav {
 
-  margin-top: 86px;
+  margin: 10px;
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
